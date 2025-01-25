@@ -20,3 +20,5 @@ Technologies Used
 HTML5: For structuring the calculator’s layout.
 
 CSS3: For styling and enhancing the visual appearance.
+
+JavaScript: For handling the logic behind arithmetic operations and interactions
