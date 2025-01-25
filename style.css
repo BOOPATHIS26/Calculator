@@ -1,0 +1,98 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+/* Calculator styles */
+.calculator {
+    background-color: #222;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Display screen styles */
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5rem;
+    text-align: right;
+    background-color: #111;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 20px;
+    font-size: 1.8rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+/* Remove extra space at the bottom */
+button:active {
+    background-color: #666;
+}
+
+/* Equal button style */
+button.equal {
+    background-color: #f39c12;
+    grid-column: span 2;
+}
+
+button.equal:hover {
+    background-color: #e67e22;
+}
+
+/* Clear button style */
+button:first-child {
+    background-color: #e74c3c;
+}
+
+button:first-child:hover {
+    background-color: #c0392b;
+}
+
+/* 0 Button: Ensuring proper span for alignment */
+button.zero {
+    grid-column: span 2;
+}
+
+/* Styling for hover */
+button:hover {
+    background-color: #555;
+}
+
+/* Button size consistency */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+}
